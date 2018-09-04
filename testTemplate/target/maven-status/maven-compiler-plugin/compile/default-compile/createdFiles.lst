@@ -1,0 +1,8 @@
+com\sdcj\testTemplate\pojo\Greeting.class
+com\sdcj\testTemplate\controller\sampleController.class
+com\sdcj\testTemplate\json\SampleRequestJson.class
+com\sdcj\testTemplate\pojo\SamplePojo.class
+com\sdcj\testTemplate\App.class
+com\sdcj\testTemplate\config\testTemplateBaseConfig.class
+com\sdcj\testTemplate\json\SampleResponseJson.class
+com\sdcj\testTemplate\service\SampleService.class
