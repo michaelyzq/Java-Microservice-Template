@@ -16,6 +16,7 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.sdcj.testTemplate.Repository.StudentDao;
 import com.sdcj.testTemplate.json.SampleRequestJson;
 import com.sdcj.testTemplate.json.SampleResponseJson;
 
@@ -31,13 +32,14 @@ public class SampleService {
 	
 	private final static Logger LOG = LoggerFactory.getLogger(SampleService.class);
 	
-
-
+	@Autowired
+	StudentDao studentDao;
 
 	public SampleResponseJson searchByCriterial(SampleRequestJson requestJson) throws Exception {
 
 		SampleResponseJson sampleResponseJson = new SampleResponseJson();
 		sampleResponseJson.setTestPara("AAAAAAAAAAA");
+		LOG.warn(String.valueOf(studentDao.findAll()));
 		return sampleResponseJson;
 	}
 	
