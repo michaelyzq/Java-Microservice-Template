@@ -3,18 +3,21 @@ package com.sdcj.testTemplate.entity;
 import java.io.Serializable;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
-import org.springframework.data.annotation.Id;
+
 
 import lombok.Data;
 
 @Entity
-@Table(name = "STUDENT")
-@Data
+@Table(name = "STUDENTS")
+
 public class Student implements Serializable {
 	
 	@Id
+	@GeneratedValue
     private Long id;
 	public Long getId() {
 		return id;

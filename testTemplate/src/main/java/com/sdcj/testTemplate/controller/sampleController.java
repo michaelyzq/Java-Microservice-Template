@@ -14,7 +14,7 @@ import com.sdcj.testTemplate.pojo.Greeting;
 import com.sdcj.testTemplate.service.SampleService;
 
 @RestController
-public class sampleController {
+public class SampleController {
 	
 	 private static final String template = "Hello, %s!";
 	 private final AtomicLong counter = new AtomicLong();

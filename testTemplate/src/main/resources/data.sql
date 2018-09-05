@@ -1,0 +1,5 @@
+insert into students values (1,'MICHAEL',100.0)
+insert into students values  (2,'LOTTE',100.0)
+insert into students values  (3,'AAA',100.0)
+insert into students values  (4,'BBB',80.0)
+insert into students values  (5,'CCC',90.0)

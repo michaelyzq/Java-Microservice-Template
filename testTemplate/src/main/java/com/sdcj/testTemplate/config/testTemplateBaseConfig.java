@@ -8,7 +8,7 @@ import org.springframework.core.io.ClassPathResource;
 
 
 @ConfigurationProperties(prefix="test Template")
-public class testTemplateBaseConfig {
+public class TestTemplateBaseConfig {
 	
 	@Bean
 	public static PropertySourcesPlaceholderConfigurer properties() {

@@ -2,20 +2,12 @@ package com.sdcj.testTemplate.service;
 
 
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.google.gson.Gson;
 import com.sdcj.testTemplate.Repository.StudentDao;
 import com.sdcj.testTemplate.json.SampleRequestJson;
 import com.sdcj.testTemplate.json.SampleResponseJson;
@@ -39,7 +31,8 @@ public class SampleService {
 
 		SampleResponseJson sampleResponseJson = new SampleResponseJson();
 		sampleResponseJson.setTestPara("AAAAAAAAAAA");
-		LOG.warn(String.valueOf(studentDao.findAll()));
+		Gson gson = new Gson();
+		LOG.warn(gson.toJson((studentDao.searchstudent())));
 		return sampleResponseJson;
 	}
 	
